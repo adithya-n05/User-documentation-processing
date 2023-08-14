@@ -15,11 +15,14 @@ print(config)
 
 FilePath = config["path"]
 
+print("Opening file...")
 file_data = open(FilePath, 'rb')
 
+print("Communicating with AYP servers...")
 response = requests.post('https://api.askyourpdf.com/v1/api/upload', headers=headers,
  files={'file': file_data})
 
+print("Response received, decoding document ID...")
 if response.status_code == 201:
     print(response.json())
 else:
