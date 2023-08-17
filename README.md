@@ -16,7 +16,7 @@ The folder consists of the following files:
 2. Install the requirements using the command:
 
 ```zsh
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ## Usage:
@@ -26,7 +26,7 @@ Ensure that any files you would like to be analysed are stored in the same direc
 To run the analyser, use the command:
 
 ```zsh
-python AYP-analyser.py -p PATHTOFILE
+python3 AYP-analyser.py -p PATHTOFILE
 ```
 ## Debugging:
 

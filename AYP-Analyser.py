@@ -5,7 +5,7 @@ import logging
 from datetime import datetime
 
 headers = {
-    'x-api-key': 'ask_f3aa063182fcda8c62f80973f01088b4'
+    'x-api-key': 'ask_1bdd7d6dd7f62eadc54b2e60ef4a1cf2'
 }
 
 parser = argparse.ArgumentParser(description="Chatbot for user documentation assistance",
@@ -32,7 +32,7 @@ else:
 
 headers = {
     'Content-Type': 'application/json',
-    'x-api-key': 'ask_f3aa063182fcda8c62f80973f01088b4'
+    'x-api-key': 'ask_1bdd7d6dd7f62eadc54b2e60ef4a1cf2'
 }
 
 docid = response.json()
