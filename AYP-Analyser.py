@@ -3,7 +3,6 @@ import argparse
 import json
 import logging
 from datetime import datetime
-import os
 
 headers = {
     'x-api-key': 'ask_f3aa063182fcda8c62f80973f01088b4'
