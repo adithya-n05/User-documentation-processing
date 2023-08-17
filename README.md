@@ -28,4 +28,6 @@ To run the analyser, use the command:
 ```zsh
 python AYP-analyser.py -p PATHTOFILE
 ```
+## Debugging:
 
+Logs are stored under a folder called logs. The logs are stored in a file named Logs-CURRENTTIME-FILEANALYSED.log. The logs are stored in a .log file format and the outputs of the communication with the chatbot can be viewed here.
