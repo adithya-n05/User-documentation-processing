@@ -1,0 +1,20 @@
+INFO:root:user
+INFO:root:Hello!
+INFO:root:bot
+INFO:root:Hello! How can I assist you today?
+INFO:root:user
+INFO:root:How do i create a single payment beneficiary?
+INFO:root:bot
+INFO:root:To create a single payment beneficiary, follow these steps:
+
+1. Navigate to the Create Single Payment screen.
+2. In the Beneficiary section, click on the "Create Adhoc Beneficiary" link.
+3. The Create Adhoc Beneficiary screen will be displayed.
+4. Fill in the required details for the beneficiary, such as their name, account number, and bank details.
+5. Click on the "Save" button to create the beneficiary.
+
+Please note that this information is based on the MCB 6.4 End User Guide - Transfers. If you are using a different system or platform, the steps may vary.
+INFO:root:user
+INFO:root:bye
+INFO:root:bot
+INFO:root:See you later!
