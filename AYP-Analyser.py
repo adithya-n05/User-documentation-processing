@@ -1,6 +1,9 @@
 import requests
 import argparse
 import json
+import logging
+from datetime import datetime
+import os
 
 headers = {
     'x-api-key': 'ask_f3aa063182fcda8c62f80973f01088b4'
@@ -45,6 +48,10 @@ message = " "
 
 print("Welcome! Feel free to ask any queries regarding the document to this bot. If you would like to finish speaking, please type \"bye\"")
 
+logfilename = "Logs-" + datetime.now().strftime("%Y.%m.%d-%H:%M:%S") + "-" + FilePath +".log"
+print(logfilename)
+logging.basicConfig(filename="logs/" + logfilename, level=logging.INFO)
+
 while message != "bye":
     if message != "":
         response = requests.post('https://api.askyourpdf.com/v1/chat/' + docid['docId'] + '?stream=True', headers=headers, data=json.dumps(data))
@@ -59,7 +66,13 @@ while message != "bye":
         message=input("\nUser: ")
         if message == "bye":
             print("System: See you later!")
+            data.append({"sender": "user", "message": "bye"})
+            data.append({"sender": "bot", "message": "See you later!"})
+            for i in range(len(data)):
+                logging.info(data[i]["sender"])
+                logging.info(data[i]["message"])
         data.append({"sender":"user", "message": message})
     else:
         while message == "":
             message = input("The system does not accept an empty message, please write something: ")
+    
