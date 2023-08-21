@@ -40,7 +40,7 @@ docid = response.json()
 data = [
     {
         "sender": "user",
-        "message": "Hello!"
+        "message": "You are a caht assistant made to help corporate banking customers learn how to use our corporate banking products. We have passed to you our user documentation. At any point, if a user asks a question that you are unable to provide an answer to, or they are not in the provided context, please respond to those queries with \"I apologise, I do not know the response to that question, please contact tagit@gmail.com if you have any further queries.\". If you understand all these requirements, please return to this query \"Hello! Welcome to the Mobeix Chat assistant\""
     }
 ]
 message = " "
