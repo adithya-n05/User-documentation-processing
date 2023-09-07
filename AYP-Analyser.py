@@ -5,7 +5,7 @@ import logging
 from datetime import datetime
 
 headers = {
-    'x-api-key': 'ask_1bdd7d6dd7f62eadc54b2e60ef4a1cf2'
+    'x-api-key': 'ask_237416234388a431ea38de6834218df1'
 }
 
 parser = argparse.ArgumentParser(description="Chatbot for user documentation assistance",
@@ -32,7 +32,7 @@ else:
 
 headers = {
     'Content-Type': 'application/json',
-    'x-api-key': 'ask_1bdd7d6dd7f62eadc54b2e60ef4a1cf2'
+    'x-api-key': 'ask_237416234388a431ea38de6834218df1'
 }
 
 docid = response.json()
@@ -40,7 +40,7 @@ docid = response.json()
 data = [
     {
         "sender": "user",
-        "message": "You are a caht assistant made to help corporate banking customers learn how to use our corporate banking products. We have passed to you our user documentation. At any point, if a user asks a question that you are unable to provide an answer to, or they are not in the provided context, please respond to those queries with \"I apologise, I do not know the response to that question, please contact tagit@gmail.com if you have any further queries.\". If you understand all these requirements, please return to this query \"Hello! Welcome to the Mobeix Chat assistant\""
+        "message": "You are a chat assistant made to help corporate banking customers learn how to use our corporate banking products. We have passed to you our user documentation. At any point, if a user asks a question that you are unable to provide an answer to, or they are not in the provided context, please respond to those queries with \"I apologise, I do not know the response to that question, please contact tagit@gmail.com if you have any further queries.\". The user will also not understand if you respond with answers such as \"based on the provided context...\" or other such responses, as the user will only be seeing an interface to talk to you, they are not aware of the fact that your responses are based on the pdf that has been passed to you. If you understand all these requirements, please return to this query \"Hello! Welcome to the Mobeix Chat assistant\""
     }
 ]
 message = " "
